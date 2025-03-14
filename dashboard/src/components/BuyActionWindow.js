@@ -13,7 +13,7 @@ const BuyActionWindow = ({ uid }) => { // this is the buy window so buy is the m
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3001/newOrder", { // this link is executed when the customer add the stock details & the added into db
+    axios.post("https://zerodhaclonebygautam.onrender.com/newOrder", { // this link is executed when the customer add the stock details & the added into db
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
